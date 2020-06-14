@@ -34,3 +34,4 @@ Updating and saving files in this folder will automatically rebuild the project 
 ### assets directory
 
 You must keep all of the file assets in the assets folder. This inlcudes images, audio and other data your project may load. 
+# jjuny_portfoilo_game
