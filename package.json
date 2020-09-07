@@ -1,11 +1,11 @@
 {
   "name": "phaser3-project-template",
-  "description": "A Phaser 3 Project Template",
   "version": "1.0.9",
-  "main": "server.js",
+  "description": "A Phaser 3 Project Template",
+  "main": "src/index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "node server.js && webpack-dev-server --host=0.0.0.0 --port=$PORT"
+    "start": "npm run build && webpack-dev-server --port=8000 --mode development"
   },
   "repository": {
     "type": "git",
@@ -25,12 +25,6 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
-    "express": "^4.17.1",
     "phaser": "^3.18.1"
-  },
-  "engines": {
-    "node": "12.16.3"
-  },
-  "keywords": [],
-  "heroku-run-build-script": true
+  }
 }
