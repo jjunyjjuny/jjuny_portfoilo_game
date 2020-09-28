@@ -3,9 +3,7 @@ import playerPng from "../assets/player/texture2.png";
 import playerJson from "../assets/player/texture2.json";
 import mapPng from "../assets/tile/tile_final.png";
 import mapJson from "../assets/tile/map_final.json";
-import MainMenuScene from "./mainMenuScene copy";
-
-class GameScene extends Phaser.Scene {
+export default class GameScene extends Phaser.Scene {
   constructor() {
     super({ key: "gameScene" });
   }
@@ -241,5 +239,3 @@ class GameScene extends Phaser.Scene {
     }
   }
 }
-
-export default MainMenuScene;
