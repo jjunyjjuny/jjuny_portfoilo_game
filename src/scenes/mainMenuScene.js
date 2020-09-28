@@ -196,12 +196,19 @@ class MainMenuScene extends Phaser.Scene {
 
   createCursor() {
     this.cursors = this.input.keyboard.createCursorKeys();
+    this.keyW = this.input.keyboard.addKey("w");
+    this.keyA = this.input.keyboard.addKey("a");
+    this.keyS = this.input.keyboard.addKey("s");
+    this.keyD = this.input.keyboard.addKey("d");
+    this.keySpacebar = this.input.keyboard.addKey(
+      Phaser.Input.Keyboard.KeyCodes.SPACE
+    );
   }
 
   update() {
     const speed = 300;
 
-    if (this.cursors.left.isDown) {
+    if (this.cursors.left.isDown || this.keyA.isDown) {
       this.player.setVelocityX(-speed);
       if (this.player.body.blocked.down) {
         this.player.anims.play("walk-left", true);
