@@ -6,9 +6,9 @@ import leaderboardImg from "../assets/img/leaderboard.png";
 import instructionsImg from "../assets/img/instructions.png";
 
 
-class MainMenuScene extends Phaser.Scene {
+class MainMenuSceneCopy extends Phaser.Scene {
   constructor() {
-    super({ key: "MainMenuScene" });
+    super({ key: "MainMenuSceneCopy" });
   }
 
   preload() {
@@ -70,4 +70,4 @@ class MainMenuScene extends Phaser.Scene {
   }
 }
 
-export default MainMenuScene;
+export default MainMenuSceneCopy;
