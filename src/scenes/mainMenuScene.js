@@ -216,7 +216,7 @@ class MainMenuScene extends Phaser.Scene {
         this.player.anims.play("jump-left", true);
       }
       this.dir = true;
-    } else if (this.cursors.right.isDown) {
+    } else if (this.cursors.right.isDown || this.keyD.isDown) {
       this.player.setVelocityX(speed);
       if (this.player.body.blocked.down) {
         this.player.anims.play("walk-right", true);
@@ -236,7 +236,7 @@ class MainMenuScene extends Phaser.Scene {
         }
       }
     }
-    if (this.cursors.up.isDown && this.player.body.blocked.down) {
+    if (this.keySpacebar.isDown && this.player.body.blocked.down) {
       let power = 700;
       this.player.setVelocityY(-power);
       if (this.dir) {
