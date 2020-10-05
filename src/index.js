@@ -4,7 +4,7 @@ import MainMenuScene from "./scenes/mainMenuScene";
 const config = {
   type: Phaser.AUTO,
   width: window.innerWidth,
-  height: window.innerHeight - 5,
+  height: window.innerHeight,
   parent: "divId",
   dom: {
     createContainer: true,
