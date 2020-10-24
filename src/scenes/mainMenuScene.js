@@ -1,8 +1,8 @@
 import Phaser from "phaser";
-import playerPng from "../assets/player/texture2.png";
-import playerJson from "../assets/player/texture2.json";
-import mapPng from "../assets/tile/tile_final.png";
-import mapJson from "../assets/tile/map_final.json";
+import playerPng from "../assets/player/texture.png";
+import playerJson from "../assets/player/texture.json";
+import mapPng from "../assets/tile/tile_first.png";
+import mapJson from "../assets/tile/map_first.json";
 
 class MainMenuScene extends Phaser.Scene {
   constructor() {
@@ -206,7 +206,7 @@ class MainMenuScene extends Phaser.Scene {
   }
 
   update() {
-    const speed = 300;
+    const speed = 5000;
 
     if (this.cursors.left.isDown || this.keyA.isDown) {
       this.player.setVelocityX(-speed);
@@ -237,7 +237,7 @@ class MainMenuScene extends Phaser.Scene {
       }
     }
     if (this.keySpacebar.isDown && this.player.body.blocked.down) {
-      let power = 700;
+      let power = 800;
       this.player.setVelocityY(-power);
       if (this.dir) {
         this.player.anims.play("jump-left", true);
