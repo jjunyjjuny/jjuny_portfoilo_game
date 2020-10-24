@@ -9,7 +9,6 @@ const HTML_FILE = path.join(DIST_DIR, "index.html");
 
 app.use(express.static(DIST_DIR));
 app.get("*", (req, res) => {
-  console.log("app.get");
   res.sendFile(HTML_FILE);
 });
 

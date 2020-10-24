@@ -206,7 +206,7 @@ class MainMenuScene extends Phaser.Scene {
   }
 
   update() {
-    const speed = 5000;
+    const speed = 500;
 
     if (this.cursors.left.isDown || this.keyA.isDown) {
       this.player.setVelocityX(-speed);
